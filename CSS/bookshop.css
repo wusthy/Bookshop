@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    background: #fff;
+}
+/*元素的内边距边框不在增加盒子的宽度*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.div-title{
+    background: #f1f1f1;
+}
+.title{
+   margin: 0;
+   text-align: center;
+}
+
+.TypeTree{
+    margin-top: 0.5em;
+    position: fixed;
+    left: 2em;
+    width: 12em;
+    border: solid  1px black;
+    height: auto;
+}
+.Books{
+    width:56em ;
+    height: auto;
+    top:0.5em;
+    margin: 0.5em auto;
+    border-right: solid 1px black;
+    overflow:auto;/* clear float*/
+}
+
+.bookBar *{
+    vertical-align:middle;
+}
+
+#parentType{
+    text-decoration: underline;
+}
+.bookCart{
+    width: 12em;
+    /*display:inline;*/
+    position: absolute;
+    height: auto;
+    right: 2em;
+    top:3em;
+}
+
+.booklist{
+    list-style: none;
+}
+.booklist li{
+    float:left;
+    margin: 0.5em;
+    text-align: center;
+    position: relative;
+}
+.cart{
+    width: auto;
+    height: 38em;
+}
+
+.booksToCart li{
+    list-style:none ;
+    text-align: center;
+    margin: 1em;
+    width: 8em;
+    height: auto;
+}
+
+.booksToCart li input{
+    width: 3em;
+    autofocus:"autofocus";
+}
+

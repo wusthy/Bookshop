@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple bookshop UI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bookShop</title>
+    <link rel="stylesheet" href="CSS/style.min.css">
+    <link rel = 'stylesheet' href="CSS/bookshop.css">
+</head>
+<body>
+    <div class="div-title">
+        <h1 class="title">BookShop</h1>
+    </div>
+
+    <div class="TypeTree">
+        <ul>
+            <li data-jstree='{"icon":"Image/plus.png"}' id = 'Science'>Science</li>
+        </ul>
+        <ul>
+            <li data-jstree='{"icon":"Image/plus.png"}' id = 'Technology'>Technology
+                <ul>
+                    <li>Computer</li>
+                    <li>Network</li>
+                    <li>Maths</li>
+                    <li>Agricultural</li>
+                    <li>Chemistry</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li data-jstree='{"icon":"Image/plus.png"}' id = 'Art'>Art</li>
+        </ul>
+        <ul>
+            <li data-jstree='{"icon":"Image/plus.png"}' id = 'Novel'>Novel
+                <ul>
+                    <li>History</li>
+                    <li>Fiction</li>
+                    <li>Romance</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li data-jstree='{"icon":"Image/plus.png"}' id = 'Sports'>Sports</li>
+        </ul>
+    </div>
+
+    <div class = 'Books'>
+        <div class="bookBar">
+            <label id = 'parentType'>Science</label>
+            <img src="Image/next.png">
+            <label id = 'currentType'></label>
+        </div>
+
+        <div class="showBooks" id = 'showBooks'>
+             <ul class="booklist">
+
+             </ul>
+        </div>
+    </div>
+
+    <div class="bookCart" id = 'bookCart'>
+        <fieldset class="cart ">
+            <legend>Shopping Cart</legend>
+            <label>Total Price:</label>
+            <label id = 'totalPrice'></label>
+            <div class="booksToCart">
+
+            </div>
+        </fieldset>
+    </div>
+
+<script type="text/javascript" src="Js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src ='Js/jstree.min.js'></script>
+<script type="text/javascript" src ='Js/Jsbookshop.js'></script>
+</body>
+</html>
